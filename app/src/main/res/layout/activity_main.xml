@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edt_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/insert_number"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edt_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/insert_number"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btn_add"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:padding="2dp"
+        android:text="@string/btnAdd"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@id/btn_add"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:padding="2dp"
+        android:text="@string/btnMinus"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/btn_minus"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:padding="2dp"
+        android:text="@string/btnTimes"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_devided"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_minus"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/background_dark"
+        android:padding="2dp"
+        android:text="@string/btnDevided"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_devided"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        tools:text="RESULT" />
+</RelativeLayout>

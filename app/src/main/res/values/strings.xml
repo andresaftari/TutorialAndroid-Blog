@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="insert_number">Insert a number</string>
+    <string name="btnAdd">+</string>
+    <string name="btnMinus">-</string>
+    <string name="btnTimes">x</string>
+    <string name="btnDevided">:</string>
+</resources>
