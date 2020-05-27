@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/iv_list_poster"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        tools:src="@mipmap/ic_launcher_round"
+        android:contentDescription="@string/posterDesc" />
+
+    <TextView
+        android:id="@+id/tv_detailTitle"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_list_poster"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:text="Movie Title" />
+
+    <TextView
+        android:id="@+id/tv_detailGenre"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_detailTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        tools:text="Genre" />
+</RelativeLayout>

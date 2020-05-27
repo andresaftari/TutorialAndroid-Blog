@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Contoh RecyclerView</string>
+    <string name="posterDesc">Detail Poster</string>
+
+    <string-array name="title_name">
+        <item>Bhrams: The Boy 2</item>
+        <item>Fantasy Island</item>
+        <item>Little Woman</item>
+        <item>Mariposa</item>
+    </string-array>
+
+    <string-array name="genre_name">
+        <item>Genre : Horror, Mystery, Thriller</item>
+        <item>Genre : Adventure, Horror</item>
+        <item>Genre : Drama, Romance</item>
+        <item>Genre : Drama, Romance</item>
+    </string-array>
+
+    <string-array name="poster">
+        <item>@drawable/bhrams_the_boy2</item>
+        <item>@drawable/fantasy_island</item>
+        <item>@drawable/little_woman</item>
+        <item>@drawable/mariposa</item>
+    </string-array>
+</resources>
