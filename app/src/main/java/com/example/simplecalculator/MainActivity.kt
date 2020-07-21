@@ -27,21 +27,27 @@ class MainActivity : AppCompatActivity() {
             val inputA = toInt(input1)
             val inputB = toInt(input2)
 
-            if (TextUtils.isEmpty(input1)) {
-                edt_input1.error = "This field is required!"
-                return@setOnClickListener
-            } else if (TextUtils.isEmpty(input2)) {
-                edt_input2.error = "This field is required!"
-                return@setOnClickListener
-            } else if (inputA == null) {
-                edt_input1.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else if (inputB == null) {
-                edt_input2.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else {
-                val result = inputA + inputB
-                tv_result.text = result.toString()
+            when {
+                TextUtils.isEmpty(input1) -> {
+                    edt_input1.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                TextUtils.isEmpty(input2) -> {
+                    edt_input2.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                inputA == null -> {
+                    edt_input1.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                inputB == null -> {
+                    edt_input2.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                else -> {
+                    val result = inputA + inputB
+                    tv_result.text = result.toString()
+                }
             }
         }
         btn_minus.setOnClickListener {
@@ -51,21 +57,27 @@ class MainActivity : AppCompatActivity() {
             val inputA = toInt(input1)
             val inputB = toInt(input2)
 
-            if (TextUtils.isEmpty(input1)) {
-                edt_input1.error = "This field is required!"
-                return@setOnClickListener
-            } else if (TextUtils.isEmpty(input2)) {
-                edt_input2.error = "This field is required!"
-                return@setOnClickListener
-            } else if (inputA == null) {
-                edt_input1.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else if (inputB == null) {
-                edt_input2.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else {
-                val result = inputA - inputB
-                tv_result.text = result.toString()
+            when {
+                TextUtils.isEmpty(input1) -> {
+                    edt_input1.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                TextUtils.isEmpty(input2) -> {
+                    edt_input2.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                inputA == null -> {
+                    edt_input1.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                inputB == null -> {
+                    edt_input2.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                else -> {
+                    val result = inputA - inputB
+                    tv_result.text = result.toString()
+                }
             }
         }
         btn_times.setOnClickListener {
@@ -75,21 +87,27 @@ class MainActivity : AppCompatActivity() {
             val inputA = toInt(input1)
             val inputB = toInt(input2)
 
-            if (TextUtils.isEmpty(input1)) {
-                edt_input1.error = "This field is required!"
-                return@setOnClickListener
-            } else if (TextUtils.isEmpty(input2)) {
-                edt_input2.error = "This field is required!"
-                return@setOnClickListener
-            } else if (inputA == null) {
-                edt_input1.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else if (inputB == null) {
-                edt_input2.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else {
-                val result = inputA * inputB
-                tv_result.text = result.toString()
+            when {
+                TextUtils.isEmpty(input1) -> {
+                    edt_input1.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                TextUtils.isEmpty(input2) -> {
+                    edt_input2.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                inputA == null -> {
+                    edt_input1.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                inputB == null -> {
+                    edt_input2.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                else -> {
+                    val result = inputA * inputB
+                    tv_result.text = result.toString()
+                }
             }
         }
         btn_devided.setOnClickListener {
@@ -99,21 +117,27 @@ class MainActivity : AppCompatActivity() {
             val inputA = toInt(input1)
             val inputB = toInt(input2)
 
-            if (TextUtils.isEmpty(input1)) {
-                edt_input1.error = "This field is required!"
-                return@setOnClickListener
-            } else if (TextUtils.isEmpty(input2)) {
-                edt_input2.error = "This field is required!"
-                return@setOnClickListener
-            } else if (inputA == null) {
-                edt_input1.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else if (inputB == null) {
-                edt_input2.error = "This field is Integer number only!"
-                return@setOnClickListener
-            } else {
-                val result = inputA.toDouble() / inputB.toDouble()
-                tv_result.text = result.toString()
+            when {
+                TextUtils.isEmpty(input1) -> {
+                    edt_input1.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                TextUtils.isEmpty(input2) -> {
+                    edt_input2.error = "This field is required!"
+                    return@setOnClickListener
+                }
+                inputA == null -> {
+                    edt_input1.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                inputB == null -> {
+                    edt_input2.error = "This field is Integer number only!"
+                    return@setOnClickListener
+                }
+                else -> {
+                    val result = inputA.toDouble() / inputB.toDouble()
+                    tv_result.text = result.toString()
+                }
             }
         }
     }
